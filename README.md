@@ -1,2 +1,55 @@
-# sentiment-analyzer-ai
-AI-powered sentiment analysis project using a pre-trained Transformer model. The program receives a text input, identifies the sentiment (positive, negative, neutral), and returns the prediction with a confidence score.
+# Multilingual Sentiment Analyzer
+
+This project uses a **multilingual BERT model** to analyze the sentiment of text inputs in multiple languages.  
+It classifies text from **negative to positive** and provides a **confidence score** for the prediction.
+
+---
+
+## Technologies Used
+
+- Python 3.x  
+- Hugging Face Transformers  
+- PyTorch  
+- Model: `nlptown/bert-base-multilingual-uncased-sentiment`
+
+---
+
+## How to Run
+
+1. **Clone this repository:**
+```bash
+git clone https://github.com/your-username/multilingual-sentiment-analyzer.git
+
+2. Install dependencies:
+pip install transformers torch
+
+3. Run the program
+python sentiment_analyzer.py
+
+4. Enter a text when prompted to see the sentiment and confidence score.
+
+Example Usage
+=== SENTIMENT ANALYZER ===
+Enter a text to analyze: I love programming!
+Sentiment: 5 stars
+Confidence: 0.987
+
+How It Works
+
+The code uses Hugging Face's pipeline function with a pre-trained multilingual BERT model.
+
+For each input text, it returns:
+
+label → sentiment (from "1 star" to "5 stars")
+
+score → model confidence in the prediction
+
+Possible Improvements / Future Ideas
+
+Add a simple GUI using Tkinter or Streamlit
+
+Allow analyzing multiple texts at once
+
+Translate the output automatically to English or other languages
+
+Compare results between different BERT models
