@@ -28,13 +28,13 @@ python sentiment_analyzer.py
 
 4. Enter a text when prompted to see the sentiment and confidence score.
 
-Example Usage
+### Example Usage
 === SENTIMENT ANALYZER ===
 Enter a text to analyze: I love programming!
 Sentiment: 5 stars
 Confidence: 0.987
 
-How It Works
+## How It Works
 
 The code uses Hugging Face's pipeline function with a pre-trained multilingual BERT model.
 
@@ -44,27 +44,7 @@ label → sentiment (from "1 star" to "5 stars")
 
 score → model confidence in the prediction
 
-Possible Improvements / Future Ideas
-
-Add a simple GUI using Tkinter or Streamlit
-
-Allow analyzing multiple texts at once
-
-Translate the output automatically to English or other languages
-
-Compare results between different BERT models
-
-How It Works
-
-The code uses Hugging Face's pipeline function with a pre-trained multilingual BERT model.
-
-For each input text, it returns:
-
-label → sentiment (from "1 star" to "5 stars")
-
-score → model confidence in the prediction
-
-Possible Improvements / Future Ideas
+## Possible Improvements / Future Ideas
 
 Add a simple GUI using Tkinter or Streamlit
 
